@@ -4,8 +4,8 @@ A very simple reverse proxy using nginx and Docker
 ```
 docker run -p 1234:80 \
 --env UPSTREAM_HTTP_ADDRESS='https://caprover.com' \
---env USERNAME=username \
---env PASSWORD=password \
+--env AUTH_USERNAME=username \
+--env AUTH_PASSWORD=password \
 caprover/nginx-reverse-proxy
 ```
 
